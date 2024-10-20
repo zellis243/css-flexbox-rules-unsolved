@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/authentication-form.css" />
+    <title>Login and Signup</title>
+  </head>
+  <body class="bg-white">
+    <header class="exercise-header">
+      <nav class="top-nav">
+        <h1>Authentication page</h1>
+        <ul>
+          <li class="back-button">
+            <a href="/">Back to main page</a>
+          </li>
+          <li>
+            <a href="./ecommerce-page.html">E-commerce page</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content">
+      <div id="sign-in">
+        <div class="form-header">
+          <h2>Sign in</h2>
+          <p class="subtext">for existing users</p>
+        </div>
+        <!-- Sign IN form starts here -->
+        <form id="sign-in-form" action="">
+          <div class="form-input-control">
+            <label for="login-field">Login</label>
+            <input
+              type="email"
+              id="login-field"
+              placeholder="use your email as login"
+              required
+            />
+          </div>
+          <div class="form-input-control">
+            <label for="password-field">Password</label>
+            <input
+              type="password"
+              id="password-field"
+              placeholder="passwords must match"
+              minlength="8"
+              required
+            />
+          </div>
+          <div class="form-checkbox-control">
+            <input type="checkbox" id="stay-signed-in" />
+            <label for="stay-signed-in">Stay signed in</label>
+          </div>
+          <hr />
+          <div class="form-submit-control">
+            <input type="submit" value="Sign in" />
+            <a href="/#">Forgot your password?</a>
+          </div>
+        </form>
+        <!-- Sign IN form ends here -->
+      </div>
+      <div id="sign-up">
+        <div class="form-header">
+          <h2>Sign up</h2>
+          <p class="subtext">for new users</p>
+        </div>
+        <!-- Sign UP form starts here -->
+        <form id="sign-up-form" action="">
+          <div class="form-input-control">
+            <label for="name-field">Your name</label>
+            <input
+              type="text"
+              id="name-field"
+              minlength="5"
+              placeholder="ex.: John Doe"
+              required
+            />
+          </div>
+          <div class="form-input-control">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="name@domain.zone"
+              required
+            />
+          </div>
+          <div class="form-input-control">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="8 characters minimum"
+              minlength="8"
+              maxlength="20"
+              required
+            />
+          </div>
+          <div class="form-input-control">
+            <label for="confirm-password">Confirm Password</label>
+            <input
+              type="password"
+              id="confirm-password"
+              placeholder="passwords must match"
+              minlength="8"
+              maxlength="20"
+              required
+            />
+          </div>
+          <div class="form-input-control">
+            <label for="phone">Phone number</label>
+            <input
+              type="tel"
+              id="phone"
+              minlength="12"
+              maxlength="12"
+              placeholder="ex.: +12336456355"
+            />
+          </div>
+          <div class="form-input-control">
+            <label for="avatar">Avatar</label>
+            <input type="file" id="avatar" />
+          </div>
+          <div class="form-group-horizontal-control">
+            <div class="form-input-control">
+              <label for="state">State</label>
+              <select id="state">
+                <option value="" disabled selected>Select your state</option>
+                <option value="TX">Texas</option>
+                <option value="IA">Iowa</option>
+                <option value="SD">South Dakota</option>
+              </select>
+            </div>
+            <div class="form-input-control">
+              <label for="state">City</label>
+              <select id="state">
+                <option value="" disabled selected>Select your city</option>
+                <option value="new-york">New York</option>
+                <option value="washington">Washington DC</option>
+                <option value="dallas">Dallas</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-input-control">
+            <p>Gender</p>
+            <div class="form-group-vertical-control">
+              <div class="form-radio-control">
+                <input type="radio" id="male" name="gender" value="male" />
+                <label for="male">Male</label>
+              </div>
+              <div class="form-radio-control">
+                <input type="radio" id="female" name="gender" value="female" />
+                <label for="female">Female</label>
+              </div>
+              <div class="form-radio-control">
+                <input
+                  type="radio"
+                  id="other"
+                  name="gender"
+                  value="other"
+                  checked
+                />
+                <label for="other">Other</label>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="form-submit-control">
+            <input type="submit" value="Sign up" />
+          </div>
+        </form>
+        <!-- Sign UP form ends here -->
+      </div>
+    </div>
+  </body>
+</html>

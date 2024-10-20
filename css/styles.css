@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #21222c;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: #da5252;
+}
+
+.content-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.exercise {
+  padding: 30px;
+  border: 1px solid gray;
+  border-radius: 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.exercise h3 a {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.exercise p {
+  line-height: 24px;
+}
+
+header.exercise-header {
+  min-height: 60px;
+  background-color: black;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+}
+
+.top-nav {
+  width: 100%;
+  padding: 0 30px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  height: 100%;
+}
+
+.top-nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+  height: 100%;
+  align-items: center;
+}
+
+.top-nav a {
+  color: white;
+  padding: 6px 12px;
+  border: 1px solid #da5252;
+  border-radius: 6px;
+  text-decoration: none;
+  display: flex;
+  gap: 12px;
+}
+
+.top-nav a:hover {
+  background-color: #da5252;
+}
+
+.top-nav .back-button a {
+  border-color: white;
+}
+
+.top-nav .back-button a:before {
+  content: '\2190';
+}
+
+.top-nav .back-button a:hover {
+  background-color: white;
+  color: black;
+}
+
+.bg-white {
+  background-color: white;
+}
