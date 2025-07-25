@@ -39,6 +39,7 @@ form {
 #sign-in,
 #sign-up {
   display: flex;
+  justify-content: flex-start;
   flex-direction: column;
   flex: 1;
 }
@@ -90,8 +91,9 @@ label {
 
 .form-submit-control {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 
 .form-header {
