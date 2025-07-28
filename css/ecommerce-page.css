@@ -60,6 +60,8 @@ section {
   background: #1f1f27;
   padding: 10px 20px;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .search-bar input {
@@ -125,6 +127,7 @@ section {
 .view-options {
   display: flex;
   gap: 15px;
+  justify-content: right;
 }
 
 i.fa-th-list {
@@ -141,6 +144,8 @@ i.fa-th-list {
   height: 40px;
   border: 1px solid #8d8ba5;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
 }
 
 .products {
@@ -162,7 +167,6 @@ i.fa-th-list {
 
 .product-name {
   font-size: 28px;
-  text-align: center;
   display: block;
   margin-bottom: 10px;
 }
@@ -262,13 +266,21 @@ i.fa-th-list {
 
 .lines .product-info {
   flex: 1;
-  text-align: center;
 }
 
 .lines .product-action {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
+}
+
+.lines .product-name,
+.lines .product-description {
+  text-align: left;
+}
+
+.lines .product-name {
+  margin-bottom: 20px;
 }
 
 /* LINES-ACTION VIEW */
